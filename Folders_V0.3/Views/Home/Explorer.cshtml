@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Folders.Folder>
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Folders</title>
+</head>
+<body>
+    @if (Model?.FirstOrDefault(f => f.Name == ViewBag.Name) != null)
+    {
+        <h1>@Model?.FirstOrDefault(f => f.Name == ViewBag?.Name)?.Name</h1>
+        <br />
+    }
+    else
+    {
+        <h1>Basic directory</h1>
+    }
+    @foreach (var f in Model)
+    {
+        <a asp-action="Explorer" asp-route-name="@f.Name">
+            @if (f.Parent?.Name == ViewBag.Name)
+            {
+                @f.Name;<myTag>=></myTag>
+                <br />
+            }
+        </a>
+        ;
+    }
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿@model string 
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Dynamic Explorer</title>
+    </head>
+    <body>
+        <div>
+        @{
+            try
+            {
+                List<string> dirs = Directory.GetDirectories(Model).ToList();
+                <h1>@Model</h1>
+                foreach (var dir in dirs)
+                {
+                    <a asp-action="DynamicExplorer" asp-route-currDir="@dir">@dir.Substring(dir.LastIndexOf(@"\") + 1)<myTag> =></myTag></a>
+                    <br />
+                }
+            }
+            catch(UnauthorizedAccessException ex)
+         {
+                <h1>@ex.Message</h1>
+            }
+        }
+        </div>
+   </body>
+</html>

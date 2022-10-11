@@ -1,0 +1,26 @@
+﻿@model Folders.Models.UserPath
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Static Load</title>
+</head>
+<body>
+    <div>
+        <h1>Enter existing path to load</h1>
+        <form asp-action="StaticLoad" method="post">
+            <label asp-for="Path">Path: </label>
+            <input asp-for="Path" />
+            <button type = "submit">Submit path</button>
+        </form>
+        <p>Example: C:\My Little Pony\Season 1</p>
+        <p>Using '/' instead of '\' will cause an error</p>
+    </div>
+</body>
+</html>

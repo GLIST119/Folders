@@ -1,0 +1,267 @@
+[
+  {
+    "Id": 1,
+    "Name": "Creating Digital Images",
+    "ParentId": null,
+    "Parent": null,
+    "Children": []
+  },
+  {
+    "Id": 2,
+    "Name": "Resources",
+    "ParentId": 1,
+    "Parent": {
+      "Id": 1,
+      "Name": "Creating Digital Images",
+      "ParentId": null,
+      "Parent": null,
+      "Children": [
+        null
+      ]
+    },
+    "Children": []
+  },
+  {
+    "Id": 3,
+    "Name": "Evidence",
+    "ParentId": 1,
+    "Parent": {
+      "Id": 1,
+      "Name": "Creating Digital Images",
+      "ParentId": null,
+      "Parent": null,
+      "Children": [
+        {
+          "Id": 2,
+          "Name": "Resources",
+          "ParentId": 1,
+          "Parent": null,
+          "Children": []
+        },
+        null
+      ]
+    },
+    "Children": []
+  },
+  {
+    "Id": 4,
+    "Name": "Graphic Proucts",
+    "ParentId": 1,
+    "Parent": {
+      "Id": 1,
+      "Name": "Creating Digital Images",
+      "ParentId": null,
+      "Parent": null,
+      "Children": [
+        {
+          "Id": 2,
+          "Name": "Resources",
+          "ParentId": 1,
+          "Parent": null,
+          "Children": []
+        },
+        {
+          "Id": 3,
+          "Name": "Evidence",
+          "ParentId": 1,
+          "Parent": null,
+          "Children": []
+        },
+        null
+      ]
+    },
+    "Children": []
+  },
+  {
+    "Id": 5,
+    "Name": "Primary Sources",
+    "ParentId": 2,
+    "Parent": {
+      "Id": 2,
+      "Name": "Resources",
+      "ParentId": 1,
+      "Parent": {
+        "Id": 1,
+        "Name": "Creating Digital Images",
+        "ParentId": null,
+        "Parent": null,
+        "Children": [
+          null,
+          {
+            "Id": 3,
+            "Name": "Evidence",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": []
+          },
+          {
+            "Id": 4,
+            "Name": "Graphic Proucts",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": []
+          }
+        ]
+      },
+      "Children": [
+        null
+      ]
+    },
+    "Children": []
+  },
+  {
+    "Id": 6,
+    "Name": "Seconary Sources",
+    "ParentId": 2,
+    "Parent": {
+      "Id": 2,
+      "Name": "Resources",
+      "ParentId": 1,
+      "Parent": {
+        "Id": 1,
+        "Name": "Creating Digital Images",
+        "ParentId": null,
+        "Parent": null,
+        "Children": [
+          null,
+          {
+            "Id": 3,
+            "Name": "Evidence",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": []
+          },
+          {
+            "Id": 4,
+            "Name": "Graphic Proucts",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": []
+          }
+        ]
+      },
+      "Children": [
+        {
+          "Id": 5,
+          "Name": "Primary Sources",
+          "ParentId": 2,
+          "Parent": null,
+          "Children": []
+        },
+        null
+      ]
+    },
+    "Children": []
+  },
+  {
+    "Id": 7,
+    "Name": "Process",
+    "ParentId": 4,
+    "Parent": {
+      "Id": 4,
+      "Name": "Graphic Proucts",
+      "ParentId": 1,
+      "Parent": {
+        "Id": 1,
+        "Name": "Creating Digital Images",
+        "ParentId": null,
+        "Parent": null,
+        "Children": [
+          {
+            "Id": 2,
+            "Name": "Resources",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": [
+              {
+                "Id": 5,
+                "Name": "Primary Sources",
+                "ParentId": 2,
+                "Parent": null,
+                "Children": []
+              },
+              {
+                "Id": 6,
+                "Name": "Seconary Sources",
+                "ParentId": 2,
+                "Parent": null,
+                "Children": []
+              }
+            ]
+          },
+          {
+            "Id": 3,
+            "Name": "Evidence",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": []
+          },
+          null
+        ]
+      },
+      "Children": [
+        null
+      ]
+    },
+    "Children": []
+  },
+  {
+    "Id": 8,
+    "Name": "Final Product",
+    "ParentId": 4,
+    "Parent": {
+      "Id": 4,
+      "Name": "Graphic Proucts",
+      "ParentId": 1,
+      "Parent": {
+        "Id": 1,
+        "Name": "Creating Digital Images",
+        "ParentId": null,
+        "Parent": null,
+        "Children": [
+          {
+            "Id": 2,
+            "Name": "Resources",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": [
+              {
+                "Id": 5,
+                "Name": "Primary Sources",
+                "ParentId": 2,
+                "Parent": null,
+                "Children": []
+              },
+              {
+                "Id": 6,
+                "Name": "Seconary Sources",
+                "ParentId": 2,
+                "Parent": null,
+                "Children": []
+              }
+            ]
+          },
+          {
+            "Id": 3,
+            "Name": "Evidence",
+            "ParentId": 1,
+            "Parent": null,
+            "Children": []
+          },
+          null
+        ]
+      },
+      "Children": [
+        {
+          "Id": 7,
+          "Name": "Process",
+          "ParentId": 4,
+          "Parent": null,
+          "Children": []
+        },
+        null
+      ]
+    },
+    "Children": []
+  }
+]
